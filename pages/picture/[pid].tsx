@@ -12,21 +12,17 @@ const PicturePage = () => {
  
     
    return  <Layout>
-                <div className="container-fluid mt-2">
-                    {console.log(data)}
-                    { data && data.length >0?
-                    data.map((picture:{ title:string,
-                        thumbnailUrl:string,
-                        albumId:number,
-                        url:string,
-                        id:string})=>{
-                        return <Picture albumId={picture.albumId} id={picture.id} 
-                        thumbnailUrl={picture.thumbnailUrl} title={picture.title} url={picture.url}/>
-                    })
-                    :
-                    ''}
-                
-                </div>
+                { data && data.length >0?
+                data.map((picture:{ title:string,
+                    thumbnailUrl:string,
+                    albumId:number,
+                    url:string,
+                    id:string})=>{
+                    return <Picture albumId={picture.albumId} id={picture.id} 
+                    thumbnailUrl={picture.thumbnailUrl} title={picture.title} url={picture.url}/>
+                })
+                :
+                ''}
          </Layout>
 
 }

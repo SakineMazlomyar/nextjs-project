@@ -6,10 +6,7 @@ const Index = () => {
     const {data} = getRequest('https://jsonplaceholder.typicode.com/photos');
 
     return <Layout>
-                <div>   
-                    {console.log(data)}
-                    <Pictures pictures={data.slice(0,10)}/>
-                </div>
+                <Pictures pictures={data.slice(0,10)}/>
              </Layout>
 
 }
