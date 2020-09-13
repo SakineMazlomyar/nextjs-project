@@ -12,14 +12,32 @@ const PicturePage = () => {
  
     
    return  <Layout>
-                { data && data.length >0?
+                { data && data.length > 0 ?
                 data.map((picture:{ title:string,
                     thumbnailUrl:string,
                     albumId:number,
                     url:string,
                     id:string})=>{
-                    return <Picture albumId={picture.albumId} id={picture.id} 
-                    thumbnailUrl={picture.thumbnailUrl} title={picture.title} url={picture.url}/>
+                    return  <div className="container-fluid">
+                                <div className="row p-2">
+                                <div className="col-lg-6">
+                                    <h2>Single Picture</h2>
+                                    <p className="lead">Lorem Ipsum is simply dummied text of the printing and typesetting industry. </p>
+                                    <p className="lead">Lorem Ipsum is simply dummied text of the printing and typesetting industry. </p>
+                                    <p className="lead">Lorem Ipsum is simply dummied text of the printing and typesetting industry. </p>
+                                    <br />
+                                    <a href="#" className="btn btn-light m-1">Take Action</a>
+                                </div>
+
+
+
+
+                                    <div className="col-lg-6">
+                                    <img className="img-fluid"  src={picture.url} alt="" />
+                                    </div>
+              
+                                </div>
+                            </div>
                 })
                 :
                 ''}

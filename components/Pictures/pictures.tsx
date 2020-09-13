@@ -1,7 +1,9 @@
 import React from 'react';
 import Picture from '../Picture/picture'
+
+interface PictureType {id:string, url:string, thumbnailUrl:string, title:string, albumId:number}
 interface Props {
-    pictures:any
+    pictures:PictureType[]
 }
 interface State {
 
@@ -28,9 +30,9 @@ export default class Pictures extends React.Component<Props, State>{
 
     render(){
         return (
-            <div className="container-fluid mt-2">
+            <div className="container-fluid">
                 <div className="row">
-                { this.renderPictures( )}
+                { this.renderPictures()}
                 </div>
             </div>
         )
