@@ -1,7 +1,7 @@
 import Layout from '../../components/Layout/layout';
 import { useRouter } from 'next/router';
 import getRequest from '../../api/get';
-import Picture from '../../components/Picture/picture';
+
 
 const PicturePage = () => { 
     const router = useRouter();
@@ -28,18 +28,13 @@ const PicturePage = () => {
                                     <br />
                                     <a href="#" className="btn btn-light m-1">Take Action</a>
                                 </div>
-
-
-
-
                                     <div className="col-lg-6">
                                     <img className="img-fluid"  src={picture.url} alt="" />
                                     </div>
               
                                 </div>
                             </div>
-                })
-                :
+                }):
                 ''}
          </Layout>
 

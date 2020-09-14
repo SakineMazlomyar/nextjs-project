@@ -5,17 +5,8 @@ interface PictureType {id:string, url:string, thumbnailUrl:string, title:string,
 interface Props {
     pictures:PictureType[]
 }
-interface State {
 
-}
-
-export default class Pictures extends React.Component<Props, State>{
-    constructor(props:Props){
-        super(props);
-        this.state = {
-
-        }
-    }
+export default class Pictures extends React.Component<Props, {}>{
 
     renderPictures = () => {
         if(this.props.pictures && this.props.pictures.length > 0) {
