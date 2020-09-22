@@ -46,8 +46,8 @@
             
         }
         a:hover{
-            background-color:#080808;
-            color: $viewButtonHover;
+            background-color:  $viewButtonHover;
+            color: $viewButtonColor;
         }
     }
 
@@ -76,7 +76,7 @@
     /* // Medium devices (tablets, 768px and up) */
     @media (min-width: $mediumDevices) { 
         height:25em;
-        width: 25%;
+        width: 30%;
         .titleContainer{
             height:6em;
             h6 {
@@ -119,17 +119,17 @@
 
     /* // Extra large devices (large desktops, 1200px and up) */
     @media (min-width: $exteraLargDevices) { 
-        height:20em;
+        height:25em;
         width: 15%;
         .titleContainer{
-            height:4em;
-            overflow: hidden;
+            height:5em;
+            
             h6 {
                 font-size: 0.9em;
             }
         }
         .bodyContainer{
-            height:10em;
+            height:13em;
             p {
                 font-size: 1em;
            

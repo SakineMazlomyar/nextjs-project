@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Post = (props:Props) => {
      
-
+  
         return <div className={css.post}>
                     <span>Id: {props.id}  </span>
                     <div className={css.titleContainer}>

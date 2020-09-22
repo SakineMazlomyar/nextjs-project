@@ -1,7 +1,121 @@
+@import '../../scss-vars/style.module.vars.scss';
+
 .singlePost {
     position: relative;
     top: 3em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    border: solid 1px $borderColor;
+    background-color: $backgroundColorPost;
+    border-radius: 0.5rem;
+    width: 100%;
+    height:15em;
+    margin-bottom: 0.5rem;
+    color:$textColor;
     
+     span, p {
+        padding-left: 1em;
+        margin: 0.5em 0.5em;
+    }
+    .firstcontainer{
+        height:4em;
+        overflow: hidden;
+        font-size: 1.1em;
+        display: flex;
+        flex-direction: column;
+    }
+   
+   
+
+    /*  Small devices (landscape phones, 576px and up) */
+    @media (min-width: $smallDevices) {  
+        height:20em;
+        width: 100%;
+    
+        .firstContainer{
+            height:4em;
+            overflow: hidden;
+            font-size: 1.1em;
+            display: flex;
+            flex-direction: column;
+        }
+        .secondContainer{
+            height:10em;
+            p {
+                font-size: 1.1em;
+            
+            }
+        }
+       
+
+    }
+    /* // Medium devices (tablets, 768px and up) */
+    @media (min-width: $mediumDevices) { 
+        height:25em;
+        width: 100%;
+        .firstContainer{
+            height:6em;
+            span {
+                font-size: 1.2em;
+               
+            }
+        }
+        .secondContainer{
+            height:13em;
+            overflow: hidden;
+            p {
+                font-size: 1.2em;
+               
+            }
+        }
+    }
+    
+    /* // Large devices (desktops, 992px and up) */
+    @media (min-width: $largDevices) {  
+        height:20em;
+        width: 100%;
+       
+        .firstContainer{
+            height:4em;
+            overflow: hidden;
+          
+            span{
+                font-size:1.1em;
+            }
+        }
+        .secondContainer{
+            height:10em;
+            p {
+                font-size: 1.1em;
+               
+            }
+        }
+      
+
+
+    }
+
+    /* // Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: $exteraLargDevices) { 
+        height:20em;
+        width: 100%;
+        .firstContainer{
+            height:4em;
+            overflow: hidden;
+            span{
+                font-size: 1em;
+            }
+        }
+        .secondContainer{
+            height:4em;
+            overflow: hidden;
+            p{
+                font-size: 1em;
+            }
+        }
+       
+       
+    }
+
 }
