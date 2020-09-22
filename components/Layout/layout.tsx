@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Navbar from '../Navbar/navbar';
-import css from './style.module.layout.scss';
+import styles from './style.module.layout.scss';
 const Layout = (props) => {
-    return <div className={css.layoutContainer}>
+    return <div className={styles.layoutContainer}>
                <Head>
                    <title>Posts App </title>
+                 
                    <link rel="shortcut icon" href="../../static/favicon.ico" />
                </Head>
                 <Navbar />
