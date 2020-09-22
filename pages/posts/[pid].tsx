@@ -18,8 +18,8 @@ const PostPage = () => {
                     return  <div key={post.id} className={css.singlePost}>
     
                                 <div className={css.firstContainer}>
-                                    <span>Post Id:{post.id}</span>
-                                    <span>Title:{post.title} </span>
+                                    <span>Post Id: {post.id}</span>
+                                    <span>Title: {post.title} </span>
                                 </div>
                                 <div className={css.secondContainer}>
                                     <p>Description: {post.body}</p>

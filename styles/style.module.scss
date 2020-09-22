@@ -18,7 +18,7 @@
         padding-left: 1em;
         margin: 0.5em 0.5em;
     }
-    .firstcontainer{
+    .firstContainer{
         height:4em;
         overflow: hidden;
         font-size: 1.1em;
@@ -42,10 +42,8 @@
         }
         .secondContainer{
             height:10em;
-            p {
-                font-size: 1.1em;
+            font-size: 1.1em;
             
-            }
         }
        
 
@@ -56,18 +54,18 @@
         width: 100%;
         .firstContainer{
             height:6em;
-            span {
-                font-size: 1.2em;
-               
-            }
+            overflow: hidden;
+            font-size: 1.1em;
+            display: flex;
+            flex-direction: row;
+
+            
         }
         .secondContainer{
             height:13em;
             overflow: hidden;
-            p {
-                font-size: 1.2em;
-               
-            }
+            font-size: 1.2em;
+            
         }
     }
     
@@ -79,17 +77,15 @@
         .firstContainer{
             height:4em;
             overflow: hidden;
+            font-size:1.1em;
+            display: flex;
+            flex-direction: row;
           
-            span{
-                font-size:1.1em;
-            }
         }
         .secondContainer{
             height:10em;
-            p {
-                font-size: 1.1em;
-               
-            }
+            font-size: 1.1em;
+            
         }
       
 
@@ -103,16 +99,15 @@
         .firstContainer{
             height:4em;
             overflow: hidden;
-            span{
-                font-size: 1em;
-            }
+            font-size: 1em;
+            display: flex;
+            flex-direction: row;
         }
         .secondContainer{
             height:4em;
             overflow: hidden;
-            p{
-                font-size: 1em;
-            }
+            font-size: 1em;
+            
         }
        
        
