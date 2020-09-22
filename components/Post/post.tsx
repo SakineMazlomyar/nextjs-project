@@ -3,7 +3,7 @@ import css from './style.module.post.scss';
 import Link from 'next/link';
 
 const Post = (props:Props) => {
-     
+       
   
         return <div className={css.post}>
                     <span>Id: {props.id}  </span>
@@ -14,7 +14,7 @@ const Post = (props:Props) => {
                         <p>Description: {props.body}</p>  
                     </div>
                     <div className={css.buttonViewer}>
-                        <Link href={`/posts/${props.id}`}>
+                        <Link href={"/[id]"} as={`/${props.id}`}>
                             <a>View</a> 
                         </Link>
                     </div>

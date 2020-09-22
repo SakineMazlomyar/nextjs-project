@@ -1,4 +1,4 @@
-@import './scss-vars/style.module.vars.scss';
+@import '../scss-vars/style.module.vars.scss';
 
 .singlePost {
     position: relative;
@@ -9,7 +9,6 @@
     border: solid 1px $borderColor;
     background-color: $backgroundColorPost;
     border-radius: 0.5rem;
-   
     width: 100%;
     height:15em;
     color:$textColor;
@@ -25,7 +24,13 @@
         display: flex;
         flex-direction: column;
     }
-   
+    .secondContainer{
+        margin-top: 2em;
+        height:10em;
+        font-size: 1.1em;
+        font-style: italic;
+        
+    }
    
 
     /*  Small devices (landscape phones, 576px and up) */
@@ -35,14 +40,17 @@
     
         .firstContainer{
             height:4em;
-            overflow: hidden;
+        
             font-size: 1.1em;
             display: flex;
             flex-direction: column;
+            margin-top: 1em;
         }
         .secondContainer{
+            margin-top: 2em;
             height:10em;
             font-size: 1.1em;
+            font-style: italic;
             
         }
        
@@ -54,17 +62,17 @@
         width: 100%;
         .firstContainer{
             height:6em;
-            overflow: hidden;
             font-size: 1.1em;
             display: flex;
             flex-direction: row;
+            margin-top: 1em;
 
             
         }
         .secondContainer{
             height:13em;
-            overflow: hidden;
             font-size: 1.2em;
+            font-style: italic;
             
         }
     }
@@ -76,15 +84,16 @@
        
         .firstContainer{
             height:4em;
-            overflow: hidden;
             font-size:1.1em;
             display: flex;
             flex-direction: row;
+            margin-top: 1em;
           
         }
         .secondContainer{
             height:10em;
             font-size: 1.1em;
+            font-style: italic;
             
         }
       
@@ -98,15 +107,15 @@
         width: 100%;
         .firstContainer{
             height:4em;
-            overflow: hidden;
+            margin-top: 1em;
             font-size: 1em;
             display: flex;
             flex-direction: row;
         }
         .secondContainer{
             height:4em;
-            overflow: hidden;
             font-size: 1em;
+            font-style: italic;
             
         }
        

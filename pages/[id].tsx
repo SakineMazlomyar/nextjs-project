@@ -1,7 +1,7 @@
-import Layout from '../../components/Layout/layout';
+import Layout from '../components/Layout/layout';
 import { useRouter } from 'next/router';
-import getRequest from '../../api/get';
-import css from '../../styles/style.module.scss';
+import getRequest from '../api/get';
+import css from '../scss-pages/style.module.scss';
 
 const PostPage = () => { 
     const router = useRouter();
