@@ -1,0 +1,30 @@
+@import '../../scss-vars/style.module.vars.scss';
+
+.postContainer {
+    position: relative;
+    background-color:  $backgroundColorPosts;
+    padding:  0.5rem;
+   
+    
+    /*  Small devices (landscape phones, 576px and up) */
+    @media (min-width: $smallDevices) {  
+      
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+           
+    
+    }
+
+}
+
+
+
+
+
+
+
+
+

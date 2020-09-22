@@ -1,0 +1,147 @@
+@import '../../scss-vars/style.module.vars.scss';
+
+.post {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px $borderColor;
+    background-color: $backgroundColorPost;
+    border-radius: 0.5rem;
+    width: 100%;
+    height:15em;
+    margin-bottom: 0.5rem;
+    color:$textColor;
+    
+    span, h6, p {
+        padding-left: 1em;
+        margin: 0.5em 0.5em;
+    }
+    .titleContainer{
+       
+        h6 {
+            font-size: 1.1em;
+        }
+    }
+    .bodyContainer{
+        p {
+            font-size: 1em;
+            font-style: italic;
+        }
+    }
+    .buttonViewer{
+        position: relative;
+        top:2em;
+       
+        a{
+            width:30%;
+            display:block;
+            border-radius: 0.2em;
+            border:solid 1px  $borderColor;
+            text-decoration: none;
+            background-color:  $viewButtonColor;
+            color: #080808;
+            margin:auto;
+            text-align: center;
+            padding:0.2rem;
+           
+            
+        }
+        a:hover{
+            background-color:#080808;
+            color: $viewButtonHover;
+        }
+    }
+
+    /*  Small devices (landscape phones, 576px and up) */
+    @media (min-width: $smallDevices) {  
+        height:20em;
+        width: 40%;
+    
+        .titleContainer{
+            height:4em;
+            overflow: hidden;
+            h6 {
+                font-size: 1em;
+            }
+        }
+        .bodyContainer{
+            height:10em;
+            p {
+                font-size: 1em;
+            
+            }
+        }
+       
+
+    }
+    /* // Medium devices (tablets, 768px and up) */
+    @media (min-width: $mediumDevices) { 
+        height:25em;
+        width: 25%;
+        .titleContainer{
+            height:6em;
+            h6 {
+                font-size: 1.1em;
+               
+            }
+        }
+        .bodyContainer{
+            height:13em;
+            overflow: hidden;
+            p {
+                font-size: 1.1em;
+               
+            }
+        }
+    }
+    
+    /* // Large devices (desktops, 992px and up) */
+    @media (min-width: $largDevices) {  
+        height:20em;
+        width: 20%;
+        .titleContainer{
+            height:4em;
+            overflow: hidden;
+            h6 {
+                font-size: 0.9em;
+            }
+        }
+        .bodyContainer{
+            height:10em;
+            p {
+                font-size: 0.9em;
+               
+            }
+        }
+      
+
+
+    }
+
+    /* // Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: $exteraLargDevices) { 
+        height:20em;
+        width: 15%;
+        .titleContainer{
+            height:4em;
+            overflow: hidden;
+            h6 {
+                font-size: 0.9em;
+            }
+        }
+        .bodyContainer{
+            height:10em;
+            p {
+                font-size: 1em;
+           
+            }
+        }
+
+
+    }
+
+}
+
+
+
+
+

@@ -1,15 +1,15 @@
 import Layout from '../components/Layout/layout';
-import Pictures from '../components/Pictures/pictures';
-
+import Posts from '../components/Posts/posts';
 import getRequest from '../api/get';
+
 const Index = () => {
-    const {data} = getRequest('https://jsonplaceholder.typicode.com/photos');
-
+    const {data} = getRequest('https://jsonplaceholder.typicode.com/posts');
+  
     return <Layout>
-                <Pictures pictures={data.slice(0,20)}/>
-             </Layout>
+                <Posts posts={data}/>
+             </Layout>    
 
-}
+}      
    
 
 
