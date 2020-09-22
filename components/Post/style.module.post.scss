@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     border: solid 1px $borderColor;
+    box-shadow: 5px 5px $boxShadow;
     background-color: $backgroundColorPost;
     border-radius: 0.5rem;
     width: 100%;
