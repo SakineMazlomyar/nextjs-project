@@ -13,4 +13,4 @@
 ### *Now ready to go to : http://localhost:3000
 ---
 #### Description: 
-###This is a small project in react with next.js. The project uses a sample api for data and scss for design part.
+### This is a small project in react with next.js. The project uses a sample api for data and scss for design part.
