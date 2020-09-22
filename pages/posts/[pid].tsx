@@ -9,7 +9,7 @@ const PostPage = () => {
 
     
     const {data}= getRequest(url)
- 
+    
     
    return  <Layout>
                 { data && data.length > 0 ?
