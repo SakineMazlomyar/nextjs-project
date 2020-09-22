@@ -5,7 +5,6 @@ const Layout = (props) => {
     return <div className={styles.layoutContainer}>
                <Head>
                    <title>Posts App </title>
-                 
                    <link rel="shortcut icon" href="../../static/favicon.ico" />
                </Head>
                 <Navbar />
