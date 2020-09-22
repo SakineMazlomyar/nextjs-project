@@ -1,8 +1,9 @@
 ### Simple Picture App
 ### live: https://create-nextjs-app.herokuapp.com/
+---
 #### The stack 
 #### Typescript, React/Typescript, Next.js, Heroku, Rest Api(https://jsonplaceholder.typicode.com/) and scss
-
+---
 #### How to start dev env: 
 ### *Make sure you have latest node && npm
 ### *npm install in the root (to install depedencies)
