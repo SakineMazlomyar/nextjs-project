@@ -1,4 +1,4 @@
-### Simple Post App
+### Simple Posts App
 ### live: https://create-nextjs-app.herokuapp.com/
 ---
 #### The stack 
