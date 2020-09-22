@@ -7,7 +7,6 @@ const PostPage = () => {
     const router = useRouter();
     const url = router.query.pid? `https://jsonplaceholder.typicode.com/posts/${router.query.pid}`: `https://jsonplaceholder.typicode.com/posts/1`;
 
-    
     const {data}= getRequest(url)
     
     
