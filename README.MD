@@ -6,7 +6,7 @@
 ---
 #### How to start dev env: 
 ### *Clone the project
-### *Make sure you have latest node && npm
+### *Make sure you have latest node && npm (if you have different projects you can use nvm to switch and install different versions of node )
 ### *npm install in the root (to install depedencies)
 ### *npm run dev 
 ### *Takes some time to build
