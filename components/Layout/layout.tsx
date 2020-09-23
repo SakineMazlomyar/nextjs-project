@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Navbar from '../Navbar/navbar';
-import styles from './style.module.layout.scss';
+import styles from './style.layout.module.scss';
 const Layout = (props) => {
     return <div className={styles.layoutContainer}>
                <Head>

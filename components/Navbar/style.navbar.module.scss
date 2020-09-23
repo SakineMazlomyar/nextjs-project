@@ -1,10 +1,6 @@
-@import '../../scss-vars/style.module.vars.scss';
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: $backgroundColorPosts;
-}
-nav {
+@import '../../scss-vars/style.vars.module.scss';
+
+.navbar {
     background-color: $backgroundColorNavbar;
     position: relative;
     top:0;
@@ -14,6 +10,7 @@ nav {
     overflow: hidden;
     height:4em;
     border: solid 1px $borderColor;
+    box-shadow: 2px 2px $boxShadow;
     a {
         display: block;
         width:50%;

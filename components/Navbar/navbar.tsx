@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import './style.module.navbar.scss'
+import css from './style.navbar.module.scss'
 const Navbar = () => (
-    <nav>
+    <nav className={css.navbar}>
         <Link href="/"><a>Posts App</a></Link>
     </nav>
 

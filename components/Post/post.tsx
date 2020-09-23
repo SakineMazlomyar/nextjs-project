@@ -1,5 +1,5 @@
 interface Props { body:string, id:number, title:string, userId:number};
-import css from './style.module.post.scss';
+import css from './style.post.module.scss';
 import Link from 'next/link';
 
 const Post = (props:Props) => {

@@ -1,5 +1,10 @@
-@import '../scss-vars/style.module.vars.scss';
+@import '../scss-vars/style.vars.module.scss';
 
+#body {
+    margin: 0;
+    padding: 0;
+    background-color: $backgroundColorPosts;
+}
 .singlePost {
     position: relative;
     top: 2em;

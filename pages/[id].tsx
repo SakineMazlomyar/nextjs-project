@@ -1,21 +1,17 @@
 import Layout from '../components/Layout/layout';
-import { useRouter } from 'next/router';
-import getRequest from '../api/get';
 import css from '../scss-pages/style.module.scss';
+import axios from 'axios';
+import { PostType } from '../types/type';
+import { NextPageContext } from 'next';
 
-const PostPage = () => { 
-    const router = useRouter();
-    const url = router.query.id? `https://jsonplaceholder.typicode.com/posts/${router.query.id}`: `https://jsonplaceholder.typicode.com/posts/1`;
- 
-    const {data}= getRequest(url)
-    
-    
+interface Post {
+    post:PostType
+}
+export default function PostPage ({post}: Post) {
+
    return  <Layout>
-                { data && data.length > 0 ?
-                data.map((post:{
-                    body:string, id:number, title:string, userId:number
-                })=>{
-                    return  <div key={post.id} className={css.singlePost}>
+                { post.body !== "" && post.title !== "" ?
+                  <div key={post.id} className={css.singlePost}>
     
                                 <div className={css.firstContainer}>
                                     <span>Post Id: {post.id}</span>
@@ -26,10 +22,21 @@ const PostPage = () => {
                                 </div>
                                    
                             </div>
-                }):
-                ''}
+                :''}
          </Layout>
 
 }
+PostPage.getInitialProps = async ({query, req}: NextPageContext) => {
+   
+    try{
+        let response = axios.get(`https://jsonplaceholder.typicode.com/posts/${query.id}`);
+        let callBackResponse = await response;
+            
+        return callBackResponse && callBackResponse.status === 200?{post:callBackResponse.data}:{post:{ body:"", id:0,title:"",userId:0}}
+    }catch(error:any) {
+        return {post:{ body:"", id:0,title:"",userId:0}}
+            
+    }   
+}
 
-export default PostPage;
+

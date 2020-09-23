@@ -1,9 +1,9 @@
 import React from 'react';
 import Post from '../Post/post';
-import styles from './style.module.posts.scss';
-interface postType {body:string, id:number, title:string, userId:number};
+import styles from './style.posts.module.scss';
+import { PostType } from '../../types/type'
 interface Props {
-    posts:postType[]
+    posts:PostType[]
 }
 
 export default class Posts extends React.Component<Props, {}>{
