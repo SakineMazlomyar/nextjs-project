@@ -12,5 +12,5 @@
 ### *Takes some time to build
 ### *Now ready to go to : http://localhost:3000
 ---
-#### Description: 
+#### The description: 
 ### This is a small project in react with next.js. The project uses a sample api for data and scss for the design part.
