@@ -2,7 +2,7 @@
 ### live: https://create-nextjs-app.herokuapp.com/
 ---
 #### The stack 
-#### Typescript, React/Typescript, Next.js, Heroku, Rest Api(https://jsonplaceholder.typicode.com/) and scss
+#### Typescript, React, Next.js, Git, scss Heroku and the Rest Api(https://jsonplaceholder.typicode.com/).
 ---
 #### How to start dev env: 
 ### *Clone the project
