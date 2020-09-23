@@ -31,6 +31,10 @@
     .buttonViewer{
         position: relative;
         top:2em;
+        &:hover{
+            background-color:  $viewButtonHover;
+            color: $viewButtonColor;
+        }
        
         a{
             width:30%;
@@ -45,10 +49,7 @@
             padding:0.2rem;
            
             
-            &:hover{
-                background-color:  $viewButtonHover;
-                color: $viewButtonColor;
-            }
+     
         }
     }
 
