@@ -9,8 +9,8 @@
     width:100%;
     overflow: hidden;
     height:4em;
-    border: solid 1px $borderColor;
-    box-shadow: 2px 2px $boxShadow;
+    border-bottom: solid 1px $borderColor;
+  
     a {
         display: block;
         width:50%;
