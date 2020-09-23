@@ -16,6 +16,7 @@ nav {
     border: solid 1px $borderColor;
     a {
         display: block;
+        width:50%;
         font-size: 1.7em;
         font-weight: 600;
         margin-top: 0.5em;
@@ -30,4 +31,44 @@ nav {
     a:hover {
         color: $viewButtonHover;
     }
+    /*  Small devices (landscape phones, 576px and up) */
+    @media (min-width: $smallDevices) {  
+       a{
+        width:25%;
+        font-size: 1.8em;
+       }
+       
+
+    }
+    /* // Medium devices (tablets, 768px and up) */
+    @media (min-width: $mediumDevices) { 
+        a {
+            width:15%;
+            font-size: 1.7em;
+           }
+           
+    }
+    
+    /* // Large devices (desktops, 992px and up) */
+    @media (min-width: $largDevices) {  
+        a {
+            width:15%;
+            font-size: 1.6em;
+           }
+
+
+    }
+
+    /* // Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: $exteraLargDevices) { 
+        a {
+            width:10%;
+            font-size: 1.5em;
+           }
+
+
+    }
+    
+
+
 }
