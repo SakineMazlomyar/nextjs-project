@@ -23,11 +23,11 @@
         color:$brandColor;
         
         
-        
+        &:hover {
+            color: $viewButtonHover;
+        }
     }
-    a:hover {
-        color: $viewButtonHover;
-    }
+    
     /*  Small devices (landscape phones, 576px and up) */
     @media (min-width: $smallDevices) {  
        a{
